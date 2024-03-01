@@ -3,6 +3,7 @@ version: "3.5"
 services:
 
   frontend:
+    image: angular-Build
     build:
       context: ./angular
       dockerfile: ./Dockerfile
@@ -10,6 +11,7 @@ services:
       - 4205:4200
 
   backend:
+    image: .NET Build
     build:
       context: ./msnet/TestDemoApp
       dockerfile: ./Dockerfile
