@@ -11,7 +11,7 @@ services:
       - 4205:4200
 
   backend:
-    image: .net-build
+    image: net-build
     build:
       context: ./msnet/TestDemoApp
       dockerfile: ./Dockerfile
